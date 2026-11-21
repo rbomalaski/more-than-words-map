@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this map, please cite it as below."
+title: "“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars"
+authors:
+  - family-names: Bomalaski
+    given-names: Rachel
+date-released: 2026-11-21
+version: "1.0"
+type: software
+license: CC-BY-4.0
+references:
+  - type: data
+    title: "The Scholars Got Something To Say: A South-Facing Dataset for Interdisciplinary Hip-Hop Research"
+    authors:
+      - family-names: Bomalaski
+        given-names: Rachel
+    version: "2.0"
+    doi: 10.5281/zenodo.23933278
