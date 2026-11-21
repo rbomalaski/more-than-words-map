@@ -306,7 +306,7 @@ dialog#about h2{font-family:var(--display);font-size:1.3rem;margin:0 32px 2px 0;
 dialog#about .st{color:var(--muted);margin:0 0 14px}
 dialog#about h3{font-size:.95rem;margin:16px 0 4px}
 dialog#about p{margin:0 0 8px;font-size:.92rem}
-dialog#about .epi{border-left:3px solid var(--gold);padding:6px 12px;margin:6px 0 14px;font-style:italic;color:var(--muted);font-size:.9rem}
+dialog#about .epi{border-left:3px solid var(--gold);padding:6px 12px;margin:6px 0 14px;color:var(--muted);font-size:.9rem}
 dialog#about .x{position:sticky;top:0;float:right;font-size:1.1rem;line-height:1;padding:4px 9px}
 dialog#about a{color:var(--hi)}
 .tools .row.r1 #clear{flex:0 0 auto}
@@ -334,6 +334,8 @@ h1 .by{display:inline;font-size:.7em;font-weight:400;font-style:normal;opacity:.
 #aboutbtn .ico{flex:0 0 auto}
 :root[data-theme="dark"] #aboutbtn{color:#8ab4ff!important}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) #aboutbtn{color:#8ab4ff!important}}
+#homebtn{display:inline-flex;align-items:center;gap:5px}#homebtn .ico{flex:0 0 auto}
+dialog#about{max-width:min(780px,calc(100vw - 32px))}dialog#about h2{font-family:"Times New Roman",Times,Georgia,serif;font-size:1.2rem;font-weight:700}dialog#about .st{font-family:"Times New Roman",Times,Georgia,serif}
 </style>
 
 <div class="app">
@@ -348,6 +350,7 @@ h1 .by{display:inline;font-size:.7em;font-weight:400;font-style:normal;opacity:.
     <select id="artist" aria-label="Show works naming an artist"><option value="">Artist…</option></select>
     <button id="clear" type="button">Clear</button>
     </div><div class="row">
+    <button id="homebtn" type="button" onclick="location.href='index.html'"><svg class="ico" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2.5 7.5 8 3l5.5 4.5M4 6.5V13h3V9.5h2V13h3V6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>Home page</button>
     <button id="full" type="button">View full map</button>
     <button id="twinkle" type="button" aria-pressed="true"><span class="sw" aria-hidden="true"></span>Node labels</button>
     
@@ -613,8 +616,8 @@ showHome();fitCorners();
 </script>
 <dialog id="about" aria-labelledby="abouth">
 <button class="x" id="aboutx" type="button" aria-label="Close">×</button>
-<h2 id="abouth">“These Are More Than Words”</h2>
-<p class="st">An Interdisciplinary Concept Map for Hip-Hop Scholars · Rachel Bomalaski, Nov. 2026</p>
+<h2 id="abouth">“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars</h2>
+<p class="st">by Rachel Bomalaski, Nov. 2026</p>
 <div id="ab-main">
 <div class="epi">"These are more than words, this is more than rap. This is the streets, and I am the trap." Jeezy, <i>Standing Ovation</i></div>
 <h3>What it is</h3>
