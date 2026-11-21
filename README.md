@@ -22,7 +22,7 @@ Designed by Rachel Bomalaski. Built with AI assistance (Claude, Anthropic), whic
 
 ## How to cite
 
-Bomalaski, Rachel. 2026. *“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars*. Zenodo. https://doi.org/[DOI to come].
+Bomalaski, Rachel. 2026. *“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars*. Zenodo. https://doi.org/10.5281/zenodo.24424225.
 
 Linked dataset: Bomalaski, Rachel. 2026. *The Scholars Got Something To Say: A South-Facing Dataset for Interdisciplinary Hip-Hop Research*. Version 2.0. Zenodo. https://doi.org/10.5281/zenodo.23933278.
 
