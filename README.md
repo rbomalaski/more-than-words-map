@@ -4,7 +4,7 @@ by Rachel Bomalaski, Nov. 2026
 
 "These are more than words, this is more than rap. This is the streets, and I am the trap." Jeezy, *Standing Ovation*
 
-An interactive map of 8,018 works of hip-hop scholarship in 95 clusters, grouped into twelve overlapping conceptual groupings. It has three views of the same works:
+An interactive map of over 8,000 works of hip-hop scholarship in 95 clusters, grouped into twelve overlapping conceptual groupings. It has three views of the same works:
 
 - **Bling view** (`bling.html`): facets and clusters
 - **Blob view** (`blob.html`): blobs and clusters
@@ -24,7 +24,7 @@ Designed by Rachel Bomalaski. Built with AI assistance (Claude, Anthropic), whic
 
 Bomalaski, Rachel. 2026. *“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars*. Zenodo. https://doi.org/[DOI to come].
 
-To cite the works themselves, use the dataset: Bomalaski, Rachel. 2026. *The Scholars Got Something To Say: A South-Facing Dataset for Interdisciplinary Hip-Hop Research*. Version 2.0. Zenodo. https://doi.org/10.5281/zenodo.23933278.
+Linked dataset: Bomalaski, Rachel. 2026. *The Scholars Got Something To Say: A South-Facing Dataset for Interdisciplinary Hip-Hop Research*. Version 2.0. Zenodo. https://doi.org/10.5281/zenodo.23933278.
 
 ## License
 
