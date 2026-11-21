@@ -15,7 +15,10 @@ h1{font-size:clamp(1.4rem,4vw,2rem);line-height:1.25;margin:0 0 .3em}
 .views{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:0 0 2em}
 .views a{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;color:var(--fg);text-decoration:none}
 .views a b{display:block;color:var(--link);font-size:1.1em}
-.views a .vi{width:28px;height:28px;display:block;margin:0 0 6px}
+.views a{display:grid;grid-template-columns:1fr auto;column-gap:12px;align-items:center}
+.views a b{grid-column:1;grid-row:1}
+.views a span{grid-column:1;grid-row:2}
+.views a .vi{grid-column:2;grid-row:1/3;align-self:stretch;height:100%;width:auto;aspect-ratio:1;display:block}
 .views a span{font-size:.9em;color:var(--muted)}
 a{color:var(--link)}
 h2{font-size:1.1rem;margin:2em 0 .4em}
