@@ -2,7 +2,7 @@
 
 by Rachel Bomalaski, Nov. 2026
 
-[Epigraph: Jeezy, “Standing Ovation” — lines to be added by the author]
+"These are more than words, this is more than rap. This is the streets, and I am the trap." Jeezy, *Standing Ovation*
 
 An interactive map of 8,018 works of hip-hop scholarship in 95 clusters, grouped into twelve overlapping conceptual groupings. It has three views of the same works:
 
