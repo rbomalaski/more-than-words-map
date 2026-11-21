@@ -334,8 +334,8 @@ h1 .by{display:inline;font-size:.7em;font-weight:400;font-style:normal;opacity:.
 #aboutbtn .ico{flex:0 0 auto}
 :root[data-theme="dark"] #aboutbtn{color:#8ab4ff!important}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) #aboutbtn{color:#8ab4ff!important}}
-#homebtn{display:inline-flex;align-items:center;gap:5px}#homebtn .ico{flex:0 0 auto}
 dialog#about{max-width:min(780px,calc(100vw - 32px))}dialog#about h2{font-family:"Times New Roman",Times,Georgia,serif;font-size:1.2rem;font-weight:700}dialog#about .st{font-family:"Times New Roman",Times,Georgia,serif}
+#homebtn{display:inline-flex;align-items:center;gap:5px;color:#1d4ed8!important;font-weight:600}#homebtn .ico{flex:0 0 auto}:root[data-theme="dark"] #homebtn{color:#8ab4ff!important}@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) #homebtn{color:#8ab4ff!important}}
 </style>
 
 <div class="app">
@@ -350,13 +350,13 @@ dialog#about{max-width:min(780px,calc(100vw - 32px))}dialog#about h2{font-family
     <select id="artist" aria-label="Show works naming an artist"><option value="">Artist…</option></select>
     <button id="clear" type="button">Clear</button>
     </div><div class="row">
-    <button id="homebtn" type="button" onclick="location.href='index.html'"><svg class="ico" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2.5 7.5 8 3l5.5 4.5M4 6.5V13h3V9.5h2V13h3V6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>Home page</button>
     <button id="full" type="button">View full map</button>
     <button id="twinkle" type="button" aria-pressed="true"><span class="sw" aria-hidden="true"></span>Node labels</button>
     
     <span class="views"><a class="viewbtn bling" href="bling.html" data-view="bling">Bling view</a>
     <a class="viewbtn blob" href="blob.html" data-view="blob">Blob view</a><a class="viewbtn brain" href="brain.html" data-view="brain" aria-current="page">Brain view</a></span>
     <button id="aboutbtn" type="button" aria-haspopup="dialog"><svg class="ico" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.6" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="4.9" r="1" fill="currentColor"/><rect x="7.25" y="6.9" width="1.5" height="4.6" rx=".6" fill="currentColor"/></svg>About this map</button>
+    <button id="homebtn" type="button" onclick="location.href='index.html'"><svg class="ico" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M2.5 7.5 8 3l5.5 4.5M4 6.5V13h3V9.5h2V13h3V6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>Home page</button>
   </div></div>
 </header>
 <main>
