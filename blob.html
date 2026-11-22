@@ -283,7 +283,7 @@ B.forEach(b=>{
   p.addEventListener('click',()=>showBubble(b.k));
   p.addEventListener('keydown',e=>{if(e.key==='Enter')showBubble(b.k)});
   const t=el('text',{x:b.lx,y:b.ly,'text-anchor':'middle','dominant-baseline':'central',class:'flabel'+(b.new?' new':'')},$('#labels'));
-  t.addEventListener('pointerenter',()=>fhov(p,t,true));t.addEventListener('pointerleave',()=>fhov(p,t,false));t.addEventListener('click',()=>showBubble(b.k));
+  t.addEventListener('pointerenter',()=>fhov(p,t,true));t.addEventListener('pointerleave',()=>fhov(p,t,false));t.addEventListener('click',()=>showBubble(b.k));(window.FP=window.FP||[]).push([p,t]);
   // facet names run over two lines; a name with no spaces breaks after its last hyphen
   {const s=b.short;let L;if(s.includes(' ')){const sp=[...s.matchAll(/ /g)].map(m=>m.index);let best=sp[0],bd=1e9;for(const k of sp){const d=Math.abs(k-s.length/2)-(/[&]$/.test(s.slice(0,k))?3:0);if(d<bd){bd=d;best=k;}}L=[s.slice(0,best),s.slice(best+1)];}
    else{const k=s.lastIndexOf('-');L=k>0?[s.slice(0,k+1),s.slice(k+1)]:[s];}
@@ -474,6 +474,14 @@ $('#full').addEventListener('click',()=>{vb={...home};setVB();$('#jump').value='
 {const n=document.getElementById('viewname').textContent.trim().toLowerCase();const v=n.startsWith('blob')?'blob':n.startsWith('brain')?'brain':'bling';document.querySelector(`.viewbtn[data-view="${v}"]`).setAttribute('aria-current','page');}
 showHome();fitCorners();
 </script>
+
+<script>(()=>{const FP=window.FP||[];const svg=document.getElementById('map');if(!svg||!FP.length)return;let cur=null,raf=0,last=null;
+const ev=n=>new PointerEvent(n,{bubbles:false});
+function pick(x,y,tg){const lab=tg&&tg.closest&&tg.closest('text.flabel');if(lab){const e=FP.find(f=>f[1]===lab);if(e)return e;}
+ const pt=svg.createSVGPoint();pt.x=x;pt.y=y;let hit=null;for(const e of FP){const m=e[0].getScreenCTM();if(!m)continue;try{if(e[0].isPointInFill(pt.matrixTransform(m.inverse())))hit=e;}catch(_){}}return hit;}
+function set(h){if(h===cur&&(!h||h[1].classList.contains('fhov')))return;if(cur&&cur!==h)cur[1].dispatchEvent(ev('pointerleave'));cur=h;if(h)h[1].dispatchEvent(ev('pointerenter'));}
+svg.addEventListener('pointermove',e=>{last=[e.clientX,e.clientY,e.target];if(raf)return;raf=requestAnimationFrame(()=>{raf=0;if(svg.classList.contains('drag'))return;set(pick(last[0],last[1],last[2]));});});
+svg.addEventListener('pointerleave',()=>{if(cur){cur[1].dispatchEvent(ev('pointerleave'));cur=null;}});})();</script>
 <dialog id="about" aria-labelledby="abouth">
 <button class="x" id="aboutx" type="button" aria-label="Close">×</button>
 <h2 id="abouth">“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars</h2>
@@ -528,4 +536,3 @@ d.addEventListener('click',e=>{const t=e.target.closest('button');if(!t||!d.cont
  else if(t.dataset.back==='group'){showGroup(curG);}});
 })();
 </script>
-
