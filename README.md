@@ -16,7 +16,7 @@ Open `index.html`, or any view, in a web browser. Each file is self-contained; t
 
 ## Data
 
-Every work on the map comes from the dataset *The Scholars Got Something To Say: A South-Facing Dataset for Interdisciplinary Hip-Hop Research*, version 2.0 (8,456 works; the 430 that fit no cluster are not shown). Each work's full citation, the searches that found it, and its tags are in the dataset: https://doi.org/10.5281/zenodo.23933278
+Every work on the map comes from the dataset *The Scholars Got Something To Say: A South-Facing Dataset for Interdisciplinary Hip-Hop Research*, version 2.0 (8,456 works; the 430 that fit no cluster are not shown). Each work's full citation, the searches that found it, and its tags are in the dataset: https://doi.org/10.5281/zenodo.23933278 (browse it online at https://rbomalaski.github.io/scholars-got-something-to-say)
 
 ## How it was made
 
@@ -24,7 +24,7 @@ Designed by Rachel Bomalaski. Built with AI assistance (Claude, Anthropic), whic
 
 ## How to cite
 
-Bomalaski, Rachel. 2026. *“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars*. Version 1.1. Zenodo. https://doi.org/10.5281/zenodo.24424224.
+Bomalaski, Rachel. 2026. *“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars*. Version 1.2. Zenodo. https://doi.org/10.5281/zenodo.24424224.
 
 Linked dataset: Bomalaski, Rachel. 2026. *The Scholars Got Something To Say: A South-Facing Dataset for Interdisciplinary Hip-Hop Research*. Version 2.0. Zenodo. https://doi.org/10.5281/zenodo.23933278.
 
