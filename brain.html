@@ -299,6 +299,7 @@ header h1,header .sub,header p,header h1 span{color:#000!important}
 .tools .row.r1 select{flex:0 1 auto;min-width:64px;text-overflow:ellipsis}
 .tools .row button,.tools .row .viewbtn{white-space:nowrap}
 .tools .views{display:inline-flex;flex-wrap:nowrap;gap:8px}
+text.flabel,text.flabel tspan{pointer-events:none!important}
 dialog#about{max-width:min(780px,calc(100vw - 32px))}dialog#about h2{font-family:"Times New Roman",Times,Georgia,serif;font-size:1.2rem;font-weight:700}dialog#about .st{font-family:"Times New Roman",Times,Georgia,serif}
 
 dialog#about{max-width:min(680px,calc(100vw - 32px));max-height:calc(100vh - 48px);overflow:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);padding:22px 24px;font-family:var(--body);line-height:1.5}
@@ -499,7 +500,7 @@ function select(i){starEls.forEach((g,j)=>g.classList.toggle('sel',j===i));}
 function showCluster(i){const c=C[i];select(i);clearFilter(false);openPanel();
   phd.innerHTML=`<h2>${esc(c[1])}</h2><div class="meta">${c[6]} works · ${c[2].map(r=>`<span class="chip${bubbleBy[r].new?' new':''}" data-b="${r}">${esc(bubbleBy[r].name)}</span>`).join('')}</div>`+
     (c[7]?'':`<p class="note">These bubbles don't touch in the gem, so this cluster sits at the edge of ${esc(bubbleBy[c[2][0]].name)} nearest ${esc(bubbleBy[c[2][1]].name)}.</p>`);
-  pbd.innerHTML=list(sortWorks(byCluster[i]));pbd.scrollTop=0;}
+  pbd.innerHTML=list(sortWorks(byCluster[i]),1e9);pbd.scrollTop=0;}
 function showBubble(k){const b=bubbleBy[k];select(null);openPanel();
   const cs=C.map((c,i)=>[c,i]).filter(([c])=>c[2].includes(k)).sort((x,y)=>y[0][6]-x[0][6]);
   const n=cs.reduce((s,[c])=>s+c[6],0);
@@ -621,7 +622,7 @@ showHome();fitCorners();
 <div id="ab-main">
 <div class="epi">"These are more than words, this is more than rap. This is the streets, and I am the trap." Jeezy, <i>Standing Ovation</i></div>
 <h3>What it is</h3>
-<p>A map of over 8,000 works of hip-hop scholarship, grouped into 95 clusters of related topics. The works come from version 2.0 of the dataset, which holds 8,444 works; the other 426 fit no cluster and are not shown. The clusters sit inside twelve overlapping facets, from Culture of Symbology and Haunted Theology to Apollonian Sounds and Cycle of Militarization. A cluster that sits where two facets meet holds works that bring those areas together. The Bling, Blob, and Brain views show the same clusters in three shapes.</p>
+<p>A map of over 8,000 works of hip-hop scholarship, grouped into 95 clusters of related topics. The works come from version 2.0 of the dataset, which holds 8,456 works; the other 430 fit no cluster and are not shown. The clusters sit inside twelve overlapping facets, from Culture of Symbology and Haunted Theology to Apollonian Sounds and Cycle of Militarization. A cluster that sits where two facets meet holds works that bring those areas together. The Bling, Blob, and Brain views show the same clusters in three shapes.</p>
 <h3>What it is for</h3>
 <p>Finding scholarship on a topic across disciplines, seeing how topics connect, and seeing where little has been written. Click a cluster to list its works, with links where they exist. Search titles and authors, jump to a facet or cluster, or choose an artist to light up every work whose title names them.</p>
 <h3>Who it is for</h3>
