@@ -489,17 +489,17 @@ svg.addEventListener('pointerleave',()=>{if(cur){cur[1].dispatchEvent(ev('pointe
 <div id="ab-main">
 <div class="epi">"These are more than words, this is more than rap. This is the streets, and I am the trap." Jeezy, <i>Standing Ovation</i></div>
 <h3>What it is</h3>
-<p>A map of over 8,000 works of hip-hop scholarship, grouped into 95 clusters of related topics. The works come from version 2.0 of the dataset, which holds 8,456 works; the other 430 fit no cluster and are not shown. The clusters sit inside twelve overlapping facets, from Culture of Symbology and Haunted Theology to Apollonian Sounds and Cycle of Militarization. A cluster that sits where two facets meet holds works that bring those areas together. The Bling, Blob, and Brain views show the same clusters in three shapes.</p>
+<p>A map of over 8,000 works of hip-hop scholarship, grouped into 95 clusters of related topics. The works come from version 2.0 of the dataset, which holds 8,456 works; the other 430 fit no cluster and are not shown. The clusters sit inside twelve overlapping conceptual groupings, from Culture of Symbology and Haunted Theology to Apollonian Sounds and Cycle of Militarization. A cluster that sits where two groupings meet holds works that bring those areas together. The Bling, Blob, and Brain views show the same clusters in three shapes.</p>
 <h3>What it is for</h3>
-<p>Finding scholarship on a topic across disciplines, seeing how topics connect, and seeing where little has been written. Click a cluster to list its works, with links where they exist. Search titles and authors, jump to a facet or cluster, or choose an artist to light up every work whose title names them.</p>
+<p>Finding scholarship on a topic across disciplines, seeing how topics connect, and seeing where little has been written. Click a cluster to list its works, with links where they exist. Search titles and authors, jump to a conceptual grouping or cluster, or choose an artist to light up every work whose title names them.</p>
 <h3>Who it is for</h3>
 <p>Scholars, students, teachers, and anyone researching hip-hop, in any field. It faces South: it gives special attention to Trap and Southern hip-hop, while covering hip-hop scholarship across regions and languages.</p>
 <h3>What it is connected to</h3>
 <p>Every work on the map comes from the dataset <a href="https://doi.org/10.5281/zenodo.23933278" target="_blank" rel="noopener"><em>The Scholars Got Something To Say: A South-Facing Dataset for Interdisciplinary Hip-Hop Research</em></a>, where each work has its full citation, the searches that found it, and its tags. The clusters come from the author’s topic cards and from the dataset’s topic, element, and field columns.</p>
 <h3>How it was made</h3>
-<p>Designed by Rachel Bomalaski. Built with AI assistance (Claude, Anthropic), which placed works in clusters by words in their titles and by the dataset’s columns. The author decided the facets, the clusters, and their names. Placements are a starting point for browsing, not readings of the works.</p>
+<p>Designed by Rachel Bomalaski. Built with AI assistance (Claude, Anthropic), which placed works in clusters by words in their titles and by the dataset’s columns. The author decided the conceptual groupings, the clusters, and their names. Placements are a starting point for browsing, not readings of the works.</p>
 <h3>How to cite</h3>
-<p class="cite">Bomalaski, Rachel. 2026. <em>“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.24424225">https://doi.org/10.5281/zenodo.24424225</a>.</p>
+<p class="cite">Bomalaski, Rachel. 2026. <em>“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars</em>. Version 1.1. Zenodo. <a href="https://doi.org/10.5281/zenodo.24424224">https://doi.org/10.5281/zenodo.24424224</a>.</p>
 <p>Linked dataset: Bomalaski, Rachel. 2026. <em>The Scholars Got Something To Say: A South-Facing Dataset for Interdisciplinary Hip-Hop Research</em>. Version 2.0. Zenodo. <a href="https://doi.org/10.5281/zenodo.23933278" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.23933278</a>.</p>
 <h3>Blobs</h3>
 <p class="hint">Click a blob to see its clusters. Click a cluster to see its works.</p>
@@ -534,5 +534,29 @@ d.addEventListener('click',e=>{const t=e.target.closest('button');if(!t||!d.cont
  else if(t.dataset.c){showCluster(+t.dataset.c);}
  else if(t.dataset.back==='main'){showMain();d.scrollTop=mainScroll;const f=gl.querySelector(`[data-g="${curG}"]`);f&&f.focus();}
  else if(t.dataset.back==='group'){showGroup(curG);}});
+})();
+</script>
+<style id="v11css">
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) header{background:#4c55a8!important;border-bottom-color:#3b4390!important}}
+:root[data-theme="dark"] header{background:#4c55a8!important;border-bottom-color:#3b4390!important}
+@media (max-width:600px){
+ .tools .row.r1{flex-wrap:wrap!important}
+ .tools .row.r1 #q{flex:1 1 100%!important;max-width:none!important;width:auto!important}
+ .tools .row.r1 select{flex:1 1 0!important;min-width:0!important;max-width:none!important}
+ .key.keyoff{display:none!important}
+ #keytog{position:absolute;left:calc(8px + env(safe-area-inset-left,0px));bottom:8px;z-index:5;font-size:.8rem;padding:4px 10px}
+}
+@media (min-width:601px){#keytog{display:none}}
+</style>
+<script id="v11js">
+(function(){
+ const phone=()=>window.matchMedia('(max-width:600px)').matches;
+ const key=document.getElementById('key');
+ if(key&&!document.getElementById('keytog')){
+  const b=document.createElement('button');b.id='keytog';b.type='button';
+  const set=on=>{key.classList.toggle('keyoff',!on);b.textContent=on?'Hide key':'Key';b.setAttribute('aria-expanded',on)};
+  b.addEventListener('click',()=>set(key.classList.contains('keyoff')));
+  key.parentElement.appendChild(b);set(!phone());
+ }
 })();
 </script>

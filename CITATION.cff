@@ -4,9 +4,10 @@ title: "“These Are More Than Words”: An Interdisciplinary Concept Map for Hi
 authors:
   - family-names: Bomalaski
     given-names: Rachel
-date-released: 2026-11-21
-version: "1.0"
-doi: 10.5281/zenodo.24424225
+    orcid: "https://orcid.org/0009-0008-6826-5992"
+date-released: 2026-11-22
+version: "1.1"
+doi: 10.5281/zenodo.24424224
 type: software
 license: CC-BY-4.0
 references:

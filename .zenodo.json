@@ -3,11 +3,12 @@
   "upload_type": "other",
   "creators": [
     {
-      "name": "Bomalaski, Rachel"
+      "name": "Bomalaski, Rachel",
+      "orcid": "0009-0008-6826-5992"
     }
   ],
   "description": "<p>An interactive map of over 8,000 works of hip-hop scholarship in 95 clusters, grouped into twelve overlapping conceptual groupings, in three views (Bling, Blob, and Brain). Every work comes from the dataset <i>The Scholars Got Something To Say</i>, version 2.0. Designed by Rachel Bomalaski. Built with AI assistance (Claude, Anthropic).</p>",
-  "version": "1.0",
+  "version": "1.1",
   "keywords": [
     "hip-hop",
     "hip-hop studies",
@@ -22,6 +23,5 @@
       "scheme": "doi"
     }
   ],
-  "license": "cc-by-4.0",
-  "doi": "10.5281/zenodo.24424225"
+  "license": "cc-by-4.0"
 }

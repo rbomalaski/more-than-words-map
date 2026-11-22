@@ -6,7 +6,7 @@ by Rachel Bomalaski, Nov. 2026
 
 An interactive map of over 8,000 works of hip-hop scholarship in 95 clusters, grouped into twelve overlapping conceptual groupings. It has three views of the same works:
 
-- **Bling view** (`bling.html`): facets and clusters
+- **Bling view** (`bling.html`): facets and twinkles
 - **Blob view** (`blob.html`): blobs and clusters
 - **Brain view** (`brain.html`): lobes and nodes
 
@@ -22,7 +22,7 @@ Designed by Rachel Bomalaski. Built with AI assistance (Claude, Anthropic), whic
 
 ## How to cite
 
-Bomalaski, Rachel. 2026. *“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars*. Zenodo. https://doi.org/10.5281/zenodo.24424225.
+Bomalaski, Rachel. 2026. *“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars*. Version 1.1. Zenodo. https://doi.org/10.5281/zenodo.24424224.
 
 Linked dataset: Bomalaski, Rachel. 2026. *The Scholars Got Something To Say: A South-Facing Dataset for Interdisciplinary Hip-Hop Research*. Version 2.0. Zenodo. https://doi.org/10.5281/zenodo.23933278.
 
