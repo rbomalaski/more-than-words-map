@@ -22,9 +22,13 @@ Every work on the map comes from the dataset *The Scholars Got Something To Say:
 
 Designed by Rachel Bomalaski. Built with AI assistance (Claude, Anthropic), which placed works in clusters by words in their titles and by the dataset's columns. The author decided the conceptual groupings, the clusters, and their names. Placements are a starting point for browsing, not readings of the works.
 
+## Version 1.2.1 (2026-11-22)
+
+The phone view is fixed: bigger titles and buttons, and the list of works shows below the map. The map, its works, and the desktop view are the same as in version 1.2.
+
 ## How to cite
 
-Bomalaski, Rachel. 2026. *“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars*. Version 1.2. Zenodo. https://doi.org/10.5281/zenodo.24424224.
+Bomalaski, Rachel. 2026. *“These Are More Than Words”: An Interdisciplinary Concept Map for Hip-Hop Scholars*. Version 1.2.1. Zenodo. https://doi.org/10.5281/zenodo.24424224.
 
 Linked dataset: Bomalaski, Rachel. 2026. *The Scholars Got Something To Say: A South-Facing Dataset for Interdisciplinary Hip-Hop Research*. Version 2.0. Zenodo. https://doi.org/10.5281/zenodo.23933278.
 

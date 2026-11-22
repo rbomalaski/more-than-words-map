@@ -6,7 +6,7 @@ authors:
     given-names: Rachel
     orcid: "https://orcid.org/0009-0008-6826-5992"
 date-released: 2026-11-22
-version: "1.2"
+version: "1.2.1"
 doi: 10.5281/zenodo.24424224
 url: "https://rbomalaski.github.io/more-than-words-map"
 type: software
