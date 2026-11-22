@@ -606,7 +606,7 @@ $('#twinkle').addEventListener('click',()=>setTw(!tw));setTw(tw);
 // facets-and-clusters menu: each facet, then its clusters (biggest first)
 {const sel=$('#jump');[...B].sort((a,b)=>a.name.localeCompare(b.name)).forEach(b=>{
   const g=document.createElement('optgroup');g.label=b.short;
-  const o=document.createElement('option');o.value='b:'+b.k;o.textContent=`${b.short} (whole facet)`;g.appendChild(o);
+  const o=document.createElement('option');o.value='b:'+b.k;o.textContent=`${b.short} (whole lobe)`;g.appendChild(o);
   C.map((c,i)=>[c,i]).filter(([c])=>c[2].includes(b.k)).sort((x,y)=>y[0][6]-x[0][6]).forEach(([c,i])=>{const o=document.createElement('option');o.value='c:'+i;o.textContent=`${c[1]} (${c[6]})`;g.appendChild(o);});
   sel.appendChild(g);});
  sel.addEventListener('change',e=>{const v=e.target.value;if(!v)return;$('#artist').value='';$('#q').value='';

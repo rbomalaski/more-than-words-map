@@ -243,7 +243,7 @@ h1 .by{display:inline;font-size:.7em;font-weight:400;font-style:normal;opacity:.
 <main>
   <div class="mapcol">
   <div class="stage" id="stage">
-    <svg class="map" id="map" viewBox="48 -12 1264 1012" role="img" aria-label="Twelve concepts drawn as the facets of a cut gem, with clusters of works as starbursts">
+    <svg class="map" id="map" viewBox="48 -12 1264 1012" role="img" aria-label="Twelve concepts drawn as overlapping blobs, with clusters of works inside them">
       <defs>
         <radialGradient id="gold" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fffbe8"/><stop offset="55%" stop-color="#f4cc55"/><stop offset="100%" stop-color="#cf930f"/></radialGradient>
         <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
@@ -465,7 +465,7 @@ $('#twinkle').addEventListener('click',()=>setTw(!tw));setTw(tw);
 // facets-and-clusters menu: each facet, then its clusters (biggest first)
 {const sel=$('#jump');[...B].sort((a,b)=>a.name.localeCompare(b.name)).forEach(b=>{
   const g=document.createElement('optgroup');g.label=b.short;
-  const o=document.createElement('option');o.value='b:'+b.k;o.textContent=`${b.short} (whole facet)`;g.appendChild(o);
+  const o=document.createElement('option');o.value='b:'+b.k;o.textContent=`${b.short} (whole blob)`;g.appendChild(o);
   C.map((c,i)=>[c,i]).filter(([c])=>c[2].includes(b.k)).sort((x,y)=>y[0][6]-x[0][6]).forEach(([c,i])=>{const o=document.createElement('option');o.value='c:'+i;o.textContent=`${c[1]} (${c[6]})`;g.appendChild(o);});
   sel.appendChild(g);});
  sel.addEventListener('change',e=>{const v=e.target.value;if(!v)return;$('#artist').value='';$('#q').value='';
