@@ -2,6 +2,8 @@
 
 by Rachel Bomalaski, Nov. 2026
 
+**View the map online:** https://rbomalaski.github.io/more-than-words-map
+
 "These are more than words, this is more than rap. This is the streets, and I am the trap." Jeezy, *Standing Ovation*
 
 An interactive map of over 8,000 works of hip-hop scholarship in 95 clusters, grouped into twelve overlapping conceptual groupings. It has three views of the same works:
